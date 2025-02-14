@@ -1,4 +1,4 @@
-interface ApiResponseDTO<T> {
+interface ApiResponseDTO<T = void> {
   message: string;
   statusCode: number;
   data?: T;
