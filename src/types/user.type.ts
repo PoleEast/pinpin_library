@@ -5,7 +5,7 @@ interface RegisterRequestDTO {
 }
 
 //TODO: 要更改介面定義:增加使用者的照片資料
-interface AuthResponseDTO {
+interface UserResponseDTO {
   nickname: string;
 }
 
@@ -13,4 +13,4 @@ interface LoginRequestDTO {
   account: string;
   password: string;
 }
-export type { RegisterRequestDTO, AuthResponseDTO, LoginRequestDTO };
+export type { RegisterRequestDTO, UserResponseDTO, LoginRequestDTO };
