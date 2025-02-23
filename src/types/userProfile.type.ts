@@ -1,4 +1,10 @@
-interface userProfile {
+import { CountryRequestDTO } from "./country.type";
+import { CurrencyRequestDTO } from "./currency.type";
+import { LanguageRequestDTO } from "./language.type";
+import { TravelInterestsRequestDTO } from "./travelInterest.type";
+import { TravelStyleRequestDTO } from "./travelStyle.type";
+
+interface userProfileRequestDTO {
   bio: string;
   fullname: string;
   nickname: string;
@@ -10,11 +16,12 @@ interface userProfile {
   phone: string;
   email: string;
   address: string;
-  originCountry: string;
-  visited_countries: string[];
-  language: string[];
-  currency: string[];
-  travelInterests: string[];
-  favoriteDestinations: string[];
-  travelStyles: string[];
+  originCountry: CountryRequestDTO;
+  visited_countries: CountryRequestDTO[];
+  language: LanguageRequestDTO[];
+  currency: CurrencyRequestDTO[];
+  travelInterests: TravelInterestsRequestDTO[];
+  travelStyles: TravelStyleRequestDTO[];
 }
+
+export type { userProfileRequestDTO };
