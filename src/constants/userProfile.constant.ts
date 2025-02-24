@@ -1,4 +1,4 @@
-import { REGISTER_REQUSER_VALIDATION } from "./user.constant";
+import { REGISTER_REQUSER_VALIDATION } from "./user.constant.js";
 
 const USERPROFILE_REQUSER_VALIDATION = {
   BIO: {
