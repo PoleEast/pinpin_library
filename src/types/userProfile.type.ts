@@ -1,3 +1,5 @@
+import { AccountRequestDTO } from "./user.type";
+
 interface UserProfileRequestDTO {
   bio?: string;
   fullname?: string;
@@ -16,6 +18,7 @@ interface UserProfileRequestDTO {
   currency?: number[];
   travelInterests?: number[];
   travelStyles?: number[];
+  user?: AccountRequestDTO;
 }
 
 export type { UserProfileRequestDTO };
