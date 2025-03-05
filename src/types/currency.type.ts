@@ -1,6 +1,6 @@
-interface CurrencyRequestDTO {
+interface CurrencyResponseDTO {
   icon: string;
   code: string;
 }
 
-export type { CurrencyRequestDTO };
+export type { CurrencyResponseDTO };

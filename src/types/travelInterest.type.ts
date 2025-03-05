@@ -1,7 +1,7 @@
-interface TravelInterestsRequestDTO {
+interface TravelInterestsResponseDTO {
   name: string;
   icon: string;
   travelInterestType: string;
 }
 
-export type { TravelInterestsRequestDTO };
+export type { TravelInterestsResponseDTO };

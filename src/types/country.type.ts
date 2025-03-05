@@ -1,4 +1,4 @@
-interface CountryRequestDTO {
+interface CountryResponseDTO {
   code: string;
   dial_code: number;
   english_name: string;
@@ -6,4 +6,4 @@ interface CountryRequestDTO {
   icon: string;
 }
 
-export type { CountryRequestDTO };
+export type { CountryResponseDTO };

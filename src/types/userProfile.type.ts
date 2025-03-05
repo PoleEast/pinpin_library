@@ -1,6 +1,6 @@
 import { AccountRequestDTO } from "./user.type";
 
-interface UserProfileRequestDTO {
+interface UserProfileResponseDTO {
   bio?: string;
   fullname?: string;
   nickname: string;
@@ -21,4 +21,4 @@ interface UserProfileRequestDTO {
   user?: AccountRequestDTO;
 }
 
-export type { UserProfileRequestDTO };
+export type { UserProfileResponseDTO };

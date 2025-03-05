@@ -8,6 +8,7 @@ export * from "./types/currency.type.js";
 export * from "./types/travelStyle.type.js";
 export * from "./types/travelInterest.type.js";
 export * from "./types/travelInterestType.type.js";
+export * from "./types/setting.type.js";
 
 //常數驗證
 export * from "./constants/user.constant.js";

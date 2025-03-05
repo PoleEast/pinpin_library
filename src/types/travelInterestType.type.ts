@@ -1,6 +1,6 @@
-interface TravelInterestTypeRequestDTO {
+interface TravelInterestTypeResponseDTO {
   name: string;
   color: string;
 }
 
-export type { TravelInterestTypeRequestDTO };
+export type { TravelInterestTypeResponseDTO };
