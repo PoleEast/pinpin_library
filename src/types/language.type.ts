@@ -1,4 +1,5 @@
 interface LanguageResponseDTO {
+  id: number;
   english_name: string;
   local_name: string;
 }

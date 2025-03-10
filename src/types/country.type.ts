@@ -1,4 +1,5 @@
 interface CountryResponseDTO {
+  id: number;
   code: string;
   dial_code: number;
   english_name: string;
