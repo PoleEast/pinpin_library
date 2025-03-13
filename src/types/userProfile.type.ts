@@ -10,10 +10,9 @@ interface UserProfileResponseDTO {
   birthday?: Date;
   gender?: number;
   phone?: string;
-  email?: string;
   address?: string;
   originCountry?: number;
-  visited_countries?: number[];
+  visitedCountries?: number[];
   language?: number[];
   currency?: number[];
   travelInterests?: number[];

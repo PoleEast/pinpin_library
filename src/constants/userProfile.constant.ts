@@ -34,7 +34,8 @@ const USERPROFILE_REQUSER_VALIDATION = {
   EMAIL: {
     MIN_LENGTH: 0,
     MAX_LENGTH: 50,
-    PATTERN_MESSAGE: "Email最多只能50個字",
+    PATTERN: /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/,
+    PATTERN_MESSAGE: "Email格式不正確",
   },
 
   PHONE: {
