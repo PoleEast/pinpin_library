@@ -1,6 +1,7 @@
 import { AccountRequestDTO } from "./user.type";
 
 interface UserProfileResponseDTO {
+  motto?: string;
   bio?: string;
   fullname?: string;
   nickname: string;

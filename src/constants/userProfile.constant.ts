@@ -1,6 +1,12 @@
 import { REGISTER_REQUSER_VALIDATION } from "./user.constant.js";
 
 const USERPROFILE_REQUSER_VALIDATION = {
+  MOTTO: {
+    MIN_LENGTH: 0,
+    MAX_LENGTH: 30,
+    PATTERN_MESSAGE: "座右銘最多只能30個字",
+  },
+
   BIO: {
     MIN_LENGTH: 0,
     MAX_LENGTH: 200,
