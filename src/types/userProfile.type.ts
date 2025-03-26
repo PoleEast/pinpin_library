@@ -14,8 +14,8 @@ interface UserProfileResponseDTO {
   address?: string;
   originCountry?: number;
   visitedCountries?: number[];
-  language?: number[];
-  currency?: number[];
+  languages?: number[];
+  currencies?: number[];
   travelInterests?: number[];
   travelStyles?: number[];
   user?: AccountRequestDTO;
