@@ -1,36 +1,32 @@
-import { REGISTER_REQUSER_VALIDATION } from "./user.constant.js";
-
 const USERPROFILE_REQUSER_VALIDATION = {
   MOTTO: {
     MIN_LENGTH: 0,
     MAX_LENGTH: 30,
-    PATTERN_MESSAGE: "座右銘最多只能30個字",
   },
 
   BIO: {
     MIN_LENGTH: 0,
     MAX_LENGTH: 200,
-    PATTERN_MESSAGE: "自我介紹最多只能200個字",
   },
 
   FULLNAME: {
     MIN_LENGTH: 0,
     MAX_LENGTH: 30,
-    PATTERN_MESSAGE: "姓名最多只能30個字",
   },
 
-  NICKNAME: REGISTER_REQUSER_VALIDATION.NICKNAME,
+  NICKNAME: {
+    MIN_LENGTH: 2,
+    MAX_LENGTH: 16,
+  },
 
   AVATAR: {
     MIN_LENGTH: 0,
     MAX_LENGTH: 100,
-    PATTERN_MESSAGE: "頭像ID最多只能100個字",
   },
 
   COVERPHOTO: {
     MIN_LENGTH: 0,
     MAX_LENGTH: 100,
-    PATTERN_MESSAGE: "封面ID最多只能100個字",
   },
 
   GENDER: {
@@ -41,19 +37,40 @@ const USERPROFILE_REQUSER_VALIDATION = {
     MIN_LENGTH: 0,
     MAX_LENGTH: 50,
     PATTERN: /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/,
-    PATTERN_MESSAGE: "Email格式不正確",
   },
 
   PHONE: {
     MIN_LENGTH: 0,
     MAX_LENGTH: 20,
-    PATTERN_MESSAGE: "電話最多只能20個字",
   },
 
   ADDRESS: {
     MIN_LENGTH: 0,
     MAX_LENGTH: 100,
-    PATTERN_MESSAGE: "地址最多只能100個字",
+  },
+
+  VISITEDCOUNTRIES: {
+    MIN_LENGTH: 0,
+    MAX_LENGTH: 10,
+  },
+
+  LANGUAGES: {
+    MIN_LENGTH: 0,
+    MAX_LENGTH: 10,
+  },
+
+  CURRENCIES: {
+    MIN_LENGTH: 0,
+    MAX_LENGTH: 10,
+  },
+
+  TRAVELINTERESTS: {
+    MIN_LENGTH: 0,
+    MAX_LENGTH: 10,
+  },
+  TRAVELSTYLES: {
+    MIN_LENGTH: 0,
+    MAX_LENGTH: 10,
   },
 };
 
