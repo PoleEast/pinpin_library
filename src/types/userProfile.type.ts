@@ -1,3 +1,4 @@
+import { AvatarResponseDTO } from "./avatar.type";
 import { AccountRequestDTO } from "./user.type";
 
 interface UserProfileResponseDTO {
@@ -27,13 +28,13 @@ interface UserProfileRequestDTO {
   fullname?: string;
   nickname: string;
   isFullNameVisible?: boolean;
-  avatar?: string;
   coverPhoto?: string;
   birthday?: Date;
   gender?: number;
   phone?: string;
   address?: string;
   originCountry?: number;
+  avatar_public_id?: string;
   visitedCountries?: number[];
   languages?: number[];
   currencies?: number[];

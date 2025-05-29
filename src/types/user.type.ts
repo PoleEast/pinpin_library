@@ -9,9 +9,9 @@ interface LoginRequestDTO {
   password: string;
 }
 
-//TODO: 要更改介面定義:增加使用者的照片資料
 interface LoginResponseDTO {
   nickname: string;
+  avatar_public_id: string;
 }
 
 interface AccountRequestDTO {

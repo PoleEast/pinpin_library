@@ -9,7 +9,11 @@ export * from "./types/travelStyle.type.js";
 export * from "./types/travelInterest.type.js";
 export * from "./types/travelInterestType.type.js";
 export * from "./types/setting.type.js";
+export * from "./types/avatar.type.js";
 
 //常數驗證
 export * from "./constants/user.constant.js";
 export * from "./constants/userProfile.constant.js";
+
+//環境變數
+export * from "./constants/cloudinary.contants.js";
