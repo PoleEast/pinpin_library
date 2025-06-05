@@ -10,6 +10,7 @@ export * from "./types/travelInterest.type.js";
 export * from "./types/travelInterestType.type.js";
 export * from "./types/setting.type.js";
 export * from "./types/avatar.type.js";
+export * from "./types/avatar_change_history.type.js";
 
 //常數驗證
 export * from "./constants/user.constant.js";

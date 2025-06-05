@@ -7,7 +7,7 @@ interface UserProfileResponseDTO {
   fullname?: string;
   nickname: string;
   isFullNameVisible?: boolean;
-  avatar?: string;
+  avatar?: AvatarResponseDTO;
   coverPhoto?: string;
   birthday?: Date;
   gender?: number;
@@ -34,7 +34,6 @@ interface UserProfileRequestDTO {
   phone?: string;
   address?: string;
   originCountry?: number;
-  avatar_public_id?: string;
   visitedCountries?: number[];
   languages?: number[];
   currencies?: number[];
