@@ -2,7 +2,7 @@ interface autoCompletResponseeDTO {
   placeId: string;
   types: string[];
   text: string;
-  location: string;
+  address: string;
 }
 
 export type { autoCompletResponseeDTO };

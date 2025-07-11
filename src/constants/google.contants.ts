@@ -1,0 +1,19 @@
+const GOOGLE_MAPS_PLACE_PRICE_LEVEL = {
+  UNKNOWN: "UNKNOWN",
+  INEXPENSIVE: "INEXPENSIVE",
+  MODERATE: "MODERATE",
+  EXPENSIVE: "EXPENSIVE",
+  VERY_EXPENSIVE: "VERY_EXPENSIVE",
+} as const;
+
+const GOOGLE_MAPS_PLACE_BUSINESS_STATUS = {
+  OPEN: "OPEN",
+  CLOSE: "CLOSE",
+  UNKNOWN: "UNKNOWN",
+} as const;
+
+type GoogleMapsPlacePriceLevel = (typeof GOOGLE_MAPS_PLACE_PRICE_LEVEL)[keyof typeof GOOGLE_MAPS_PLACE_PRICE_LEVEL];
+type GoogleMapsPlaceBusinessStatus = (typeof GOOGLE_MAPS_PLACE_BUSINESS_STATUS)[keyof typeof GOOGLE_MAPS_PLACE_BUSINESS_STATUS];
+
+export { GOOGLE_MAPS_PLACE_PRICE_LEVEL, GOOGLE_MAPS_PLACE_BUSINESS_STATUS };
+export type { GoogleMapsPlacePriceLevel, GoogleMapsPlaceBusinessStatus };
