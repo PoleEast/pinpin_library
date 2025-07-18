@@ -15,7 +15,8 @@ interface IsearchLocationDTO {
   primaryType: string;
   address: string;
   id: string;
-  photo: string;
+  photoURL: string;
+  IconMaskBaseURL: string;
 }
 
 export { IsearchLocationResponseDTO, IsearchLocationDTO };
