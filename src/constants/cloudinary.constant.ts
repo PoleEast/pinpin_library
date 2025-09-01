@@ -12,4 +12,6 @@ const CLOUDINARY_CONFIG = {
   },
 };
 
+//TODO:如果只有前端或後端在使用移動到對應的專案constants資料夾
+
 export { CLOUDINARY_CONFIG };
