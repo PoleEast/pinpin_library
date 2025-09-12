@@ -1,11 +1,11 @@
-interface ApiResponseDTO<T = void> {
+interface ApiResponse<T = void> {
   message: string;
   statusCode: number;
   data?: T;
 }
 
-interface ApiErrorResponseDTO extends ApiResponseDTO<any> {
+interface ApiErrorResponse extends ApiResponse<any> {
   error?: string;
 }
 
-export type { ApiResponseDTO, ApiErrorResponseDTO };
+export type { ApiResponse, ApiErrorResponse };

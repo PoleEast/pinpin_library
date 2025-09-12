@@ -1,17 +1,17 @@
-import { CountryResponseDTO } from "./country.type";
-import { CurrencyResponseDTO } from "./currency.type";
-import { LanguageResponseDTO } from "./language.type";
-import { TravelInterestsResponseDTO } from "./travelInterest.type";
-import { TravelInterestTypeResponseDTO } from "./travelInterestType.type";
-import { UserProfileResponseDTO } from "./userProfile.type";
+import { CountryResponse } from "./country.type";
+import { CurrencyResponse } from "./currency.type";
+import { LanguageResponse } from "./language.type";
+import { TravelInterestsResponse } from "./travelInterest.type";
+import { TravelInterestTypeResponse } from "./travelInterestType.type";
+import { UserProfileResponse } from "./userProfile.type";
 
-interface SettingResponseDTO {
-  country: CountryResponseDTO[];
-  currency: CurrencyResponseDTO[];
-  language: LanguageResponseDTO[];
-  travelInterestType: TravelInterestTypeResponseDTO[];
-  travelInterest: TravelInterestsResponseDTO[];
-  travelStyle: TravelInterestsResponseDTO[];
+interface SettingResponse {
+  country: CountryResponse[];
+  currency: CurrencyResponse[];
+  language: LanguageResponse[];
+  travelInterestType: TravelInterestTypeResponse[];
+  travelInterest: TravelInterestsResponse[];
+  travelStyle: TravelInterestsResponse[];
 }
 
-export type { SettingResponseDTO };
+export type { SettingResponse };

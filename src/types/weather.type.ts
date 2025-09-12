@@ -2,7 +2,7 @@ import { Coordinates } from "./common.type.js";
 
 type PeriodOfTime = "Day" | "Night";
 
-interface WeatherRequestDTO extends Coordinates {}
+interface WeatherRequest extends Coordinates {}
 interface WeatherData {
   unixTimestamp: number;
   temperature: number;
@@ -24,16 +24,16 @@ interface WeatherForecastData extends WeatherData {
   periodOfTime: PeriodOfTime;
 }
 
-interface CurrentWeatherResponseDTO {
+interface CurrentWeatherResponse {
   country: string;
   city: string;
   data: WeatherData;
 }
 
-interface WeatherForecastResponseDTO {
+interface WeatherForecastResponse {
   country: string;
   city: string;
   data: WeatherForecastData[];
 }
 
-export type { CurrentWeatherResponseDTO, WeatherForecastResponseDTO, WeatherData, WeatherRequestDTO, WeatherForecastData, PeriodOfTime };
+export type { CurrentWeatherResponse, WeatherForecastResponse, WeatherData, WeatherRequest, WeatherForecastData, PeriodOfTime };

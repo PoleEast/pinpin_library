@@ -1,12 +1,12 @@
 import { GoogleMapsPlaceBusinessStatus, GoogleMapsPlacePriceLevel } from "../constants/google.constant.js";
 import { Coordinates, TimeOfDay } from "./common.type.js";
 
-interface SearchLocationResponseDTO {
-  locations: SearchLocationDTO[];
+interface SearchLocationResponse {
+  locations: Location[];
   nextPageToken: string;
 }
 
-interface SearchLocationDTO {
+interface Location {
   phoneNumber: string;
   rating: number;
   businessStatus: GoogleMapsPlaceBusinessStatus;
@@ -20,7 +20,7 @@ interface SearchLocationDTO {
   IconMaskBaseURL: string;
 }
 
-interface GetLocationByIdResponseDTO extends SearchLocationDTO {
+interface GetLocationByIdResponse extends Location {
   location: Coordinates;
   googleMapsUri: string;
   website?: string;
@@ -50,4 +50,4 @@ interface OpeningTimePeriods {
   day: number[];
 }
 
-export { SearchLocationResponseDTO, SearchLocationDTO, GetLocationByIdResponseDTO, OpeningTimePeriods, Review, PriceRange };
+export { SearchLocationResponse, Location, GetLocationByIdResponse, OpeningTimePeriods, Review, PriceRange };

@@ -1,13 +1,13 @@
-import { AvatarResponseDTO } from "./avatar.type";
-import { AccountRequestDTO } from "./user.type";
+import { AvatarResponse } from "./avatar.type";
+import { AccountRequest } from "./user.type";
 
-interface UserProfileResponseDTO {
+interface UserProfileResponse {
   motto?: string;
   bio?: string;
   fullname?: string;
   nickname: string;
   isFullNameVisible?: boolean;
-  avatar?: AvatarResponseDTO;
+  avatar?: AvatarResponse;
   coverPhoto?: string;
   birthday?: Date;
   gender?: number;
@@ -19,10 +19,10 @@ interface UserProfileResponseDTO {
   currencies?: number[];
   travelInterests?: number[];
   travelStyles?: number[];
-  user?: AccountRequestDTO;
+  user?: AccountRequest;
 }
 
-interface UserProfileRequestDTO {
+interface UserProfileRequest {
   motto?: string;
   bio?: string;
   fullname?: string;
@@ -41,4 +41,4 @@ interface UserProfileRequestDTO {
   travelStyles?: number[];
 }
 
-export type { UserProfileResponseDTO, UserProfileRequestDTO };
+export type { UserProfileResponse, UserProfileRequest };

@@ -1,4 +1,4 @@
-interface TravelStyleResponseDTO {
+interface TravelStyleResponse {
   id: number;
   name: string;
   description: string;
@@ -7,4 +7,4 @@ interface TravelStyleResponseDTO {
   color: string;
 }
 
-export type { TravelStyleResponseDTO };
+export type { TravelStyleResponse };

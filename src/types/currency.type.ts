@@ -1,8 +1,8 @@
-interface CurrencyResponseDTO {
+interface CurrencyResponse {
   id: number;
   icon: string;
   icon_type: string;
   code: string;
 }
 
-export type { CurrencyResponseDTO };
+export type { CurrencyResponse };

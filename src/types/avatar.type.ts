@@ -1,8 +1,8 @@
-interface AvatarResponseDTO {
+interface AvatarResponse {
   id: number;
   public_id: string;
   type: number;
   create_at: Date;
 }
 
-export type { AvatarResponseDTO };
+export type { AvatarResponse };

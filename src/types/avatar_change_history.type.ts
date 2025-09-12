@@ -1,9 +1,9 @@
-import { AvatarResponseDTO } from "./avatar.type";
+import { AvatarResponse } from "./avatar.type";
 
-interface AvatarChangeHistoryResponseDTO {
+interface AvatarChangeHistoryResponse {
   id: number;
-  avatar: AvatarResponseDTO;
+  avatar: AvatarResponse;
   change_date: Date;
 }
 
-export type { AvatarChangeHistoryResponseDTO };
+export type { AvatarChangeHistoryResponse };

@@ -1,8 +1,8 @@
-interface AutoCompletResponseDTO {
+interface AutoCompletResponse {
   placeId: string;
   types: string[];
   text: string;
   address: string;
 }
 
-export type { AutoCompletResponseDTO };
+export type { AutoCompletResponse };

@@ -1,24 +1,24 @@
-interface RegisterRequestDTO {
+interface RegisterRequest {
   account: string;
   password: string;
   nickname: string;
 }
 
-interface LoginRequestDTO {
+interface LoginRequest {
   account: string;
   password: string;
 }
 
-interface LoginResponseDTO {
+interface LoginResponse {
   nickname: string;
   avatar_public_id: string;
 }
 
-interface AccountRequestDTO {
+interface AccountRequest {
   password?: string;
   account?: string;
   email?: string;
   createAt?: Date;
 }
 
-export type { RegisterRequestDTO, LoginResponseDTO, LoginRequestDTO, AccountRequestDTO };
+export type { RegisterRequest, LoginResponse, LoginRequest, AccountRequest };

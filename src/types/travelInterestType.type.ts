@@ -1,8 +1,8 @@
-interface TravelInterestTypeResponseDTO {
+interface TravelInterestTypeResponse {
   id: number;
   name: string;
   color: string;
   travel_interests: number[];
 }
 
-export type { TravelInterestTypeResponseDTO };
+export type { TravelInterestTypeResponse };
