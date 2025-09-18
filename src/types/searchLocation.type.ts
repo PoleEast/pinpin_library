@@ -28,6 +28,7 @@ interface GetLocationByIdResponse extends Location {
   reviews: Review[];
   priceRange: PriceRange;
   timeZone: string;
+  country: string;
 }
 
 interface PriceRange {
